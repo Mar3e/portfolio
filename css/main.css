@@ -19,7 +19,6 @@ a {
   height: 100%;
   display: flex;
   padding-left: 40px;
-  background-color: green;
 }
 
 .header-main-logo img {
@@ -31,7 +30,6 @@ a {
 .header-main-nav {
   width: fit-content;
   height: 100%;
-  background-color: yellow;
 }
 .header-main-nav ul {
   margin-left: 50px;
@@ -48,21 +46,36 @@ a {
  /* When a text take the same height of it \is parent it will be centered */
   line-height: 60px;
 }
+
+.header-main-nav ul li a:hover{
+  color: #193070;
+}
+
 .header-main-sm{
-  width: 100px;
+  width: fit-content;
   height: 100%;
-  background-color: orange;
   padding-right: 40px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
 }
 
 .header-main-sm-lin{
   width: 20px;
   height: 20px;
-  background-image: url('../assets/facebook-black.png');
+  background-image: url('../assets/linkedin-dark.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.header-main-sm-wh{
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/whatsapp-dark.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* preload the image 
  and stop it from showing under the body
 body:after{
