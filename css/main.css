@@ -2,6 +2,15 @@ body {
   background-color: #1e1e1e;
 }
 
+body:after{
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../assets/images/whatsapp.png) url(../assets/images/linkedin.png);
+}
+
 a {
   cursor: pointer;
 }
@@ -45,6 +54,9 @@ a {
   font-family: arial;
  /* When a text take the same height of it \is parent it will be centered */
   line-height: 60px;
+  color: #000;
+  display: block;
+  height: 100%;
 }
 
 .header-main-nav ul li a:hover{
@@ -64,17 +76,26 @@ a {
 .header-main-sm-lin{
   width: 20px;
   height: 20px;
-  background-image: url('../assets/linkedin-dark.png');
+  background-image: url('../assets/images/linkedin-dark.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.header-main-sm-lin:hover{
+  background-image: url('../assets/images/linkedin.png');
+}
+
+
 .header-main-sm-wh{
   width: 20px;
   height: 20px;
-  background-image: url('../assets/whatsapp-dark.png');
+  background-image: url('../assets/images/whatsapp-dark.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-main-sm-wh:hover{
+  background-image: url('../assets/images/whatsapp.png');
 }
 /* preload the image 
  and stop it from showing under the body
