@@ -1,3 +1,8 @@
+@font-face{
+  font-family: flatface;
+  src: url(../assets/fonts/AbrilFatface-Regular.ttf)
+}
+
 body {
   background-color: #1e1e1e;
 }
@@ -51,7 +56,7 @@ a {
 
 .header-main-nav ul li a{
   padding: 0 10px;
-  font-family: arial;
+  font-family: "DM Serif Text", serif;
  /* When a text take the same height of it \is parent it will be centered */
   line-height: 60px;
   color: #000;
@@ -96,6 +101,13 @@ a {
 
 .header-main-sm-wh:hover{
   background-image: url('../assets/images/whatsapp.png');
+}
+
+
+p{
+  font-family: flatface;
+  color: #fff;
+  font-size: 48px;
 }
 /* preload the image 
  and stop it from showing under the body
