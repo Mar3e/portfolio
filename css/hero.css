@@ -1,0 +1,28 @@
+.section-hero{
+  margin-top: 60px;
+  background-image:url(../assets/images/android_ios-left.png), url('../assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg');
+  background-size: 50vh, cover;
+  background-repeat: no-repeat;
+  background-position: right, top;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+}
+
+
+.div-introduction{
+  margin-left: 15vw;
+}
+
+.section-hero p{
+  font-size: 27px;
+  line-height: 35px;
+  text-transform: capitalize;
+  }
+
+.section-hero h2{
+  font-size: 70px;
+  line-height: 90px;
+  text-transform: capitalize;
+  }
